@@ -9,31 +9,30 @@
 
 ### Синтаксис за открояване в Notepad++ <sup>[↑](#съдържание)</sup>
 
-* **AutoCAD-Linetype.npp.udl.xml** - синтаксис за открояване на описващите елементи във файловете с типове `линии` (_*.lin_) за AutoCAD
-* **AutoCAD-Script.npp.udl.xml** - синтаксис за открояване на определени команди в `скрипт` файловете (_*.scr_) за AutoCAD
-* **AutoCAD-Shape-Hatch.npp.udl.xml** - синтаксис за открояване на описващите елементи в `shape` файловете (_*.shp_) и типовете `щриховки` (_*.pat_) за AutoCAD
+* **AutoCAD-LPSS.udl.xml** – синтаксис за открояване на описващите елементи във файловете с типове `линии` (_*.lin_), типовете `щриховки` (_*.pat_), команди в `скрипт` (_*.scr_) и елементи в `shape` (_*.shp_) за AutoCAD
 
 ### Автоматично завършване на команди в Notepad++ <sup>[↑](#съдържание)</sup>
 
-* **AutoCAD-Linetype.xml** - автоматично завършване на наличните команди в `AutoCAD-Linetype.npp.udl.xml`<sup><sup><b>[1]</b></sup></sup> при създаване на файлове с прости и сложни типове `линии` (_*.lin_) за AutoCAD
-* **AutoCAD-Script.xml** - автоматично завършване на наличните команди в `AutoCAD-Script.npp.udl.xml`<sup><sup><b>[1]</b></sup></sup> при създаване на `скрипт` файлове (_*.scr_) за AutoCAD.
+* **AutoCAD-LPSS.xml** – автоматично завършване на наличните команди в `AutoCAD-LPSS.udl.xml`<sup><sup><b>[1]</b></sup></sup> при създаване на файлове с прости и сложни типове `линии` (_*.lin_) и `скрипт` (_*.scr_) файлове  за AutoCAD.
 
 > _За да работи, автоматичното завършване трябва да e разрешено в `Настройки > Предпочитания... > Авто-завършване > Завършване на функции и думи`_
 >
-> <sup><sup><b>[1]</b></sup></sup> _Синтаксисът за открояване на команди трябва да e наличен в Notepad++_
+> <sup><sup><b>[1]</b></sup></sup> _**AutoCAD-LPSS.udl.xml** синтаксисът трябва да e наличен в Notepad++_
 
 ### Използване <sup>[↑](#съдържание)</sup>
 
-* Файловете от папка _`userDefineLangs`_ се поставят в папка _`\userDefineLangs`_<sup><sup><b>[1]</b></sup></sup> (за версия >= 7.6.4) или се внасят чрез меню `Синтаксис > Дефиниране на синтаксис > Внасяне...`<sup><sup><b>[2]</b></sup></sup> (за коя да е версия)
-* Файловете от папка _`autoCompletion`_ се поставят в папка _`\autoCompletion`_<sup><sup><b>[3]</b></sup></sup> (за версия >=7.6.2) или в _`\plugins\APIs`_<sup><sup><b>[4]</b></sup></sup> (за версия =< 7.6.1)
+* Файлът от папка _`userDefineLangs`_ се поставят в папка _`\userDefineLangs`_<sup><sup><b>[1][2]</b></sup></sup> чрез меню `Синтаксис > Потребителски синтаксиси > Отваряне на папката със синтаксиси...` или се внася чрез меню `Синтаксис > Потребителски синтаксиси > Дефиниране на синтаксис > Внасяне...`<sup><sup><b>[3]</b></sup></sup> (за коя да е версия)
+* Файлът от папка _`autoCompletion`_ се поставя в папка _`\autoCompletion`_<sup><sup><b>[4]</b></sup></sup> (за версия >=7.6.2) или в _`\plugins\APIs`_<sup><sup><b>[5]</b></sup></sup> (за версия =< 7.6.1)
 
 > <sup><sup><b>[1]</b></sup></sup> _При стандартна инсталация папката се намира в `%AppData%\Notepad++\userDefineLangs`_
 >
-> <sup><sup><b>[2]</b></sup></sup> _При обновяване на наличните такива, те трябва предварително да се премахнат, тъй като се получава дублиране_
+> <sup><sup><b>[2]</b></sup></sup> _за версия >= 7.6.4_
 >
-> <sup><sup><b>[3]</b></sup></sup> _При стандартна инсталация, папкaтa се намира в `C:\Program Files\Notepad++\autoCompletion` или `C:\Program Files (x86)\Notepad++\autoCompletion`_
+> <sup><sup><b>[3]</b></sup></sup> _При обновяване на наличният такъв, трябва предварително да се премахне, тъй като се получава дублиране_
 >
-> <sup><sup><b>[4]</b></sup></sup> _При стандартна инсталация, папката се намира в `C:\Program Files\Notepad++\plugins\APIs` или `C:\Program Files (x86)\Notepad++\plugins\APIs`_
+> <sup><sup><b>[4]</b></sup></sup> _При стандартна инсталация, папкaтa се намира в `C:\Program Files\Notepad++\autoCompletion` или `C:\Program Files (x86)\Notepad++\autoCompletion`_
+>
+> <sup><sup><b>[5]</b></sup></sup> _При стандартна инсталация, папката се намира в `C:\Program Files\Notepad++\plugins\APIs` или `C:\Program Files (x86)\Notepad++\plugins\APIs`_
 >
 > _Пълният списък с команди се извежда, чрез натискане на клавиши `Ctrl+Space`_
 
@@ -47,6 +46,10 @@
 
 ![Linetype](/AutoCAD/img/acad-linetype.png?raw=true)
 
+* Щриховки (pattern/hatch)
+
+![Hatch](/AutoCAD/img/acad-hatch.png?raw=tue)
+
 * Скрипт файл (script)
 
 ![Script](/AutoCAD/img/acad-script.png?raw=true)
@@ -55,9 +58,6 @@
 
 ![Shape](/AutoCAD/img/acad-shape.png?raw=true)
 
-* Щриховки (hatch)
-
-![Hatch](/AutoCAD/img/acad-hatch.png?raw=tue)
 </details>
 
 ---
@@ -74,31 +74,30 @@
 
 ### UDL for AutoCAD in Notepad++ <sup>[↑](#table-of-contents)</sup>
 
-* **AutoCAD-Linetype.npp.udl.xml** - syntax highlight for `linetypes` files (_*.lin_) for AutoCAD
-* **AutoCAD-Script.npp.udl.xml** - syntax highlight for `script` files (_*.scr_) for AutoCAD
-* **AutoCAD-Shape-Hatch.npp.udl.xml** - syntax highlight for `shape` files (_*.shp_) and `hatch` types files (_*.pat_) for AutoCAD
+* **AutoCAD-LPSS.udl.xml** – syntax highlight for `linetypes` (_*.lin_), `hatch pattern` (_*.pat_), `script` (_*.scr_), and `shape` (_*.shp_) files for AutoCAD
 
 ### Auto-Completion Functions in Notepad++ <sup>[↑](#table-of-contents)</sup>
 
-* **AutoCAD-Linetype.xml** - auto-completion commands for `AutoCAD-Linetype.npp.udl.xml`<sup><sup><b>[1]</b></sup></sup> when creating `linetypes` (_*.lin_) for AutoCAD
-* **AutoCAD-Script.xml** - auto-completion commands for `AutoCAD-Script.npp.udl.xml`<sup><sup><b>[1]</b></sup></sup> when creating `script` files (_*.scr_) for AutoCAD
+* **AutoCAD-LPSS.xml** – auto-completion commands for `AutoCAD-LPSS.udl.xml`<sup><sup><b>[1]</b></sup></sup> when creating `linetypes` (_*.lin_) and `script` (_*.scr_) files for AutoCAD
 
-> _You should enable `Auto-Completion` option in Notepad++ from `Setting > Preferences > Auto-Completion > Function and word completion`_
+> _The `Auto-Completion` option should be enabled in Notepad++ from `Setting > Preferences > Auto-Completion > Function and word completion`_
 >
-> _The proper syntax highlight should be available in Notepad++_
+> <sup><sup><b>[1]</b></sup></sup> _The **AutoCAD-LPSS.udl.xml** language should be available in Notepad++_
 
 ### Usage <sup>[↑](#table-of-contents)</sup>
 
-* The files from _`userDefineLang`_ folder should be placed in _`\userDefineLang`_<sup><sup><b>[1]</b></sup></sup> folder (for version >=7.6.4) or should be imported by `Language > Define your language... > Import...`<sup><sup><b>[2]</b></sup></sup> menu (for any version)
-* The files from _`autoCompletion`_ folder should be placed in _`\autoCompletion`_<sup><sup><b>[3]</b></sup></sup> folder (for version >=7.6.2) or in _`\plugins\APIs`_<sup><sup><b>[4]</b></sup></sup> (for version =< 7.6.1)
+* The file from _`userDefineLangs`_ folder should be placed in _`\userDefineLangs`_<sup><sup><b>[1]</b></sup></sup><sup><sup><b>[2]</b></sup></sup> folder by `Language > User Defined Language > Open User Defined Language folder...` or should be imported by `Language > User Defined Language > Define your language... > Import...`<sup><sup><b>[3]</b></sup></sup> menu (for any version)
+* The file from _`autoCompletion`_ folder should be placed in _`\autoCompletion`_<sup><sup><b>[4]</b></sup></sup> folder (for version >=7.6.2) or in _`\plugins\APIs`_<sup><sup><b>[5]</b></sup></sup> (for version =< 7.6.1)
 
 > <sup><sup><b>[1]</b></sup></sup> _By regular installation the folder is in `%AppData%\Notepad++\userDefineLangs`_
 >
-> <sup><sup><b>[2]</b></sup></sup> _If you update the existing UDLs they should be removed firstly because of duplication_
+> <sup><sup><b>[2]</b></sup></sup> _(for version >=7.6.4)_
 >
-> <sup><sup><b>[3]</b></sup></sup> _By regular installation the folder is in `C:\Program Files\Notepad++\autoCompletion` or `C:\Program Files (x86)\Notepad++\autoCompletion`_
+> <sup><sup><b>[3]</b></sup></sup> _If you update the existing UDL it should be removed firstly because of duplication_
 >
-> <sup><sup><b>[4]</b></sup></sup> _By regular instalation the folder is in `C:\Program Files\Notepad++\plugins\APIs` or `C:\Program Files (x86)\Notepad++\plugins\APIs`_
+> <sup><sup><b>[4]</b></sup></sup> _By regular installation the folder is in `C:\Program Files\Notepad++\autoCompletion` or `C:\Program Files (x86)\Notepad++\autoCompletion`_
+>
+> <sup><sup><b>[5]</b></sup></sup> _By regular instalation the folder is in `C:\Program Files\Notepad++\plugins\APIs` or `C:\Program Files (x86)\Notepad++\plugins\APIs`_
 >
 > _The full list of commands can be displayed by pressing `Ctrl+Space`_
 
@@ -111,6 +110,10 @@
 
 ![Linetype](/AutoCAD/img/acad-linetype.png?raw=true)
 
+* Hatch Pattern
+
+![Hatch](/AutoCAD/img/acad-hatch.png?raw=tue)
+
 * Script
 
 ![Script](/AutoCAD/img/acad-script.png?raw=true)
@@ -118,10 +121,6 @@
 * Shape
 
 ![Shape](/AutoCAD/img/acad-shape.png?raw=true)
-
-* Hatch
-
-![Hatch](/AutoCAD/img/acad-hatch.png?raw=tue)
 
 </details>
 
